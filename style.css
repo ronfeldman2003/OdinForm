@@ -1,56 +1,117 @@
 
-html,body{
-    height: 100%;
-    margin: 0;
-}
-@font-face {
-    font-family: Noeze;
-    src: url(fonts/Norse-Bold.otf);
-  }
-.container{
-    background-image:url("img/background-blue.jpeg");
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    html,body{
+        height: 100%;
+        margin: 0;
+    }
+    @font-face {
+        font-family: Noeze;
+        src: url(fonts/Norse-Bold.otf);
+    }
+    .container{
+        background-image:url("img/background-blue.jpeg");
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: whitesmoke;
+            
+    }
+    legend {
+        font-weight: bold;
+        float: left;
+        margin-bottom: .5em;
+        font-family: 'Tsukimi Rounded', sans-serif;
+        width: 100%;
+    }
+    .form-item{
+        font-family: 'Tsukimi Rounded', sans-serif;
+        color: #454545;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .form-item>input{
+
+        border: 1px solid gray;    
+        height: 30px; 
+    }
+
+
+
+    .right-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .above-form{
+        flex-basis: 35%;
+    }
+    .form-container{    
+
+        flex: 1;
+    }
+    #submit{
+        background-color: #596D48;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin:20px;
+        border:none;
+        box-shadow: 1.5px 1px lightgray;
+        color: white;
+
+    }
+    .form-content{
+        border: none    ;
+        border-bottom: 0.5px solid gray;
+        background-color:white;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         
-}
-
-.left-bar{
-    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    flex-basis: 40%;
-}
 
 
+        width: 100%;
+    }
+    .left-bar{
+        background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        flex-basis: 40%;
+    }
 
 
 
 
-.logo{
-    order: 1;
-    height: var(--logo-hight);
-}
-.logo-background{
-    align-self: center;
-    position: relative;
-    top: 30%;
-    font-family: Noeze;
-    --logo-hight: 85%;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.537);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-text{
-    color: white;
-    order: 2;
-    font-size: 13vmin;
-}
+
+
+    .logo{
+        order: 1;
+        height: var(--logo-hight);
+    }
+    .logo-background{
+        align-self: center;
+        position: relative;
+        top: 30%;
+        font-family: Noeze;
+        --logo-hight: 85%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.537);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-text{
+        color: white;
+        order: 2;
+        font-size: 13vmin;
+    }

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,20 +21,49 @@
         </div>
       </div>
       <div class="right-bar">
-        <form action="#" method="get">
-          <lable for = "first-name">First Name</lable>
-          <input type="text" name="first-name" id="first-name">
-          <lable for = "last-name">Last Name</lable>
-          <input type="text" name="last-name" id="last-name">
-          <lable for = "email">Email</lable>
-          <input type="email" name="email" id="email">
-          <lable for = "phone-number">phone number</lable> 
-          <input  type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}">
-          <lable for = "password">password</lable>
-          <input type="password" name="password" id="password">
-          <lable for = "password-c">Confirm password</lable>
-          <input type="password" name="password-c" id="password-c">
-        </form>
+        
+        <div class="above-form">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, nihil dolore, numquam eum obcaecati similique architecto sapiente rerum cupiditate perferendis amet exercitationem suscipit laborum possimus error officia beatae nesciunt quibusdam.</div>
+        <div class="form-container">
+          <form action="#" method="get">
+            <fieldset class="form-content">
+              <legend>From Title</legend>
+              <div class="form-item">
+                <lable for="first-name">First Name</lable>
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="form-item">
+                <lable for="last-name">Last Name</lable>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+              <div class="form-item">
+                <lable for="email">Email</lable>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-item">
+                <lable for="phone-number">Phone number</lable>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  pattern="[0-9]{10}"
+                />
+              </div>
+              <div class="form-item">
+                <lable for="password">Password</lable>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="form-item">
+                <lable for="password-c">Confirm Password</lable>
+                <input type="password" name="password-c" id="password-c" />
+              </div>
+            </fieldset>
+
+            <button type="submit" id="submit" >submit</button>
+
+          </form>
+          
+        </div>
+
       </div>
     </div>
   </body>
