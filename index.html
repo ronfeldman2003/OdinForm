@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-bar">
+        <div class="logo-background">
+          <div class="logo-text">ODIN</div>
+          <img src="img/odin-logo.png" alt class="logo" />
+        </div>
+      </div>
+      <div class="right-bar">
+        <form action="#" method="get">
+          <lable for = "first-name">First Name</lable>
+          <input type="text" name="first-name" id="first-name">
+          <lable for = "last-name">Last Name</lable>
+          <input type="text" name="last-name" id="last-name">
+          <lable for = "email">Email</lable>
+          <input type="email" name="email" id="email">
+          <lable for = "phone-number">phone number</lable> 
+          <input  type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}">
+          <lable for = "password">password</lable>
+          <input type="password" name="password" id="password">
+          <lable for = "password-c">Confirm password</lable>
+          <input type="password" name="password-c" id="password-c">
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
